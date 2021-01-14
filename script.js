@@ -54,7 +54,7 @@ function process(clicked_id){
             
         
          function gohome(){
-            window.location.href="start.html"
+            window.location.href="index.html"
             }
 
         var suma = compnumb+yournumb;
