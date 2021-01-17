@@ -1,6 +1,6 @@
 var button = document.getElementById('startbutton');
 
-button.addEventListener('mouseover', playAudio);
+button.addEventListener('mousedown', playAudio);
 
 function playAudio() {
     var audio = document.getElementById('audio');
