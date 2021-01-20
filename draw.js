@@ -27,7 +27,7 @@ for (var i=0; i<2500; i++){
 
 var boxes = document.querySelectorAll('.boxes').forEach(item => {
 
-    item.addEventListener('mouseover', ()=>{
+    item.addEventListener('mouseover', (e)=>{
      console.log('hi');
      item.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",2000)";
 
