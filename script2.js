@@ -1,5 +1,7 @@
 var button = document.getElementById('startbutton');
+var buttontwo =document.getElementById('startbutton2');
 
+buttontwo.addEventListener('mousedown', playAudio);
 button.addEventListener('mousedown', playAudio);
 
 function playAudio() {
