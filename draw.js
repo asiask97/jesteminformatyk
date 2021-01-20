@@ -29,7 +29,7 @@ var boxes = document.querySelectorAll('.boxes').forEach(item => {
 
     item.addEventListener('mouseover', ()=>{
      console.log('hi');
-     item.style.backgroundColor='black';
+     item.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",2000)";
 
      //var boxxes= document.getElementById('box')
      //boxxes.style.backgroundColor='black';
