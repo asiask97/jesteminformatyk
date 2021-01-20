@@ -4,10 +4,20 @@ body{
 }
 
 .body{
-    position: relative;
+    font-family: sans-serif;
+
 }
 
-#startbutton {
+#container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;    
+}
+
+#startbutton, #startbutton2 {
     text-decoration: none;
     list-style: none;
     padding: 30px 5px;
@@ -15,25 +25,28 @@ body{
     color: rgb(148, 148, 148);
     background-color: rgb(1, 4, 20);
     box-shadow: 0 0 2px black;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    box-sizing: border-box;
-    justify-content: center;
-
     transition: linear 0.25s;
+
+    
     
 }
 
-#startbutton:hover{
+#startbutton{
+
+    margin-right: 50px;
+
+}
+
+
+#startbutton:hover, #startbutton2:hover{
     background-color: rgb(255, 255, 235);
     border: none;
     padding: 32px 7px;
     transition-timing-function: ease-in-out;
     box-shadow: 0 0 10px rgb(187, 156, 17);
     color: black;
+    }
 
+    #startbutton2:hover{
+        box-shadow: 0 0 10px rgb(255, 57, 57);
     }
