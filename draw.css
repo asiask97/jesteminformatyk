@@ -1,0 +1,21 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: repeat(4,150px);
+
+
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    
+}
+
+.wrapper > div{
+    background: white;
+    
+}
+
+
+.fillerdiv{
+    display: none;
+}
