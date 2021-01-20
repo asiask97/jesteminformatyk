@@ -1,6 +1,6 @@
 // loop that creates divs
 
-for (var i=0; i<16; i++){
+for (var i=0; i<2500; i++){
     
     var newDiv = document.createElement('div');
     newDiv.id= 'box';
