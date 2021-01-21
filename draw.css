@@ -1,8 +1,12 @@
+:root{
+    --idontknow: repeat(16,37.5px);
+}
+
+
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(50,12px);
-    grid-template-rows: repeat(50,12px);
-
+    grid-template-columns: var(--idontknow);
+    grid-template-rows: var(--idontknow);
 
     width: 600px;
     height: 600px;
