@@ -14,6 +14,7 @@ for (var i=0; i<2500; i++){
 
 // creating option for more squares
 
+
 const slider = document.getElementById('slider');
 const root = document.documentElement;
 
@@ -60,9 +61,3 @@ var boxes = document.querySelectorAll('.boxes').forEach(item => {
 
 
     });
-
-})
-
-
-
-
