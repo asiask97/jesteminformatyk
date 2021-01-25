@@ -1,19 +1,89 @@
 
-//var buttons = document.querySelectorAll('button')
+var display = ''
 
-//buttons.forEach (function clickedbutton(button) {
-    //button.addEventListener('click',function(e){
+var buttons = document.querySelectorAll('button')
+var oparator = document.getElementsByClassName('operator');
+
+buttons.forEach (function clickedbutton(button) {
+    button.addEventListener('click',function(e){
         
-      //  var pressed = e.target.id;
+    var pressed = e.target.id;
+    display = display + pressed
+
+    document.getElementById('anwser').textContent = display;
+
+    });
+
+});
+
+var equals = document.querySelector('.equals');
+equals.addEventListener('click', () =>{
+    document.getElementById('anwser').textContent = "";
+
+    //splitting the sum into two parts ( two for now --- only + for now )
+   
+   if  (display.includes('+') == true){
+       
+        var sumArray = display.split('+');
+
+    }else if (display.includes('-') == true){
+
+        var sumArray = display.split('-');
+   
+    }else if (display.includes('/') == true){
+
+        var sumArray = display.split('/');
+
+    }else if (display.includes('x') == true){
         
-    //    document.getElementById('number').innerHTML = pressed
+        var sumArray = display.split('x');
+
+    }
+     
+
+    var numArray = sumArray.map((i) => Number(i));
+    var first = numArray[0];
+    var second = numArray[1];
+
+    console.log(sumArray);
+
+    // finding out what type of sum to do +,-,/ 
+    if (display.includes('+') == true){
+
+        display = first+second;
+        document.getElementById('anwser').textContent = display;
+
+    }else if(display.includes('-') == true){
+
+        display = first-second;
+        document.getElementById('anwser').textContent = display;
+
+    }else if(display.includes('/') == true){
+
+        display = first/second;
+        document.getElementById('anwser').textContent = display;
+
+    }else if (display.includes('x') == true){
+
+        display = first*second;
+        document.getElementById('anwser').textContent = display;
+
+    }
+
+});
+
+// clear button
+
+var clear = document.getElementById('clear');
+clear.addEventListener('click', ()=>{
+
+    display = '';
+    document.getElementById('anwser').textContent = '';
 
 
+});
 
-  //  });
-//});
-
-// once equal is pressed sum is callculated 
+/* // once equal is pressed sum is callculated 
 var equals = document.getElementById('=')
 equals.addEventListener('click', function anwser(){
 
@@ -56,4 +126,4 @@ equals.addEventListener('click', function anwser(){
 
 
 
-})
+}) */
