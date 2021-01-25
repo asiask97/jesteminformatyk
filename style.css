@@ -17,7 +17,7 @@ body{
     height: 100vh;    
 }
 
-#startbutton, #startbutton2 {
+#startbutton, #startbutton2, #startbutton3 {
     text-decoration: none;
     list-style: none;
     padding: 30px 5px;
@@ -31,14 +31,14 @@ body{
     
 }
 
-#startbutton{
+#startbutton, #startbutton2{
 
-    margin-right: 50px;
+    margin-right: 20px;
 
 }
 
 
-#startbutton:hover, #startbutton2:hover{
+#startbutton:hover, #startbutton2:hover, #startbutton3:hover{
     background-color: rgb(255, 255, 235);
     border: none;
     padding: 32px 7px;
@@ -49,4 +49,8 @@ body{
 
     #startbutton2:hover{
         box-shadow: 0 0 10px rgb(255, 57, 57);
+    }
+
+    #startbutton3:hover{
+        box-shadow: 0 0 10px rgb(105, 213, 255);
     }
